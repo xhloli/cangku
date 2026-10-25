@@ -1,0 +1,29 @@
+{
+  "tz1": {
+    "name": "默认跳转组",
+    "items": [
+      {
+        "name": "落地页A",
+        "url": "https://a.example.com/promo/index.html?src=tz1&sid={suiji1}"
+      },
+      {
+        "name": "落地页B",
+        "url": "https://b.example.com/welcome/{suiji1}"
+      },
+      {
+        "name": "落地页C-带hash",
+        "url": "https://c.example.com/page.html#/route/{suiji1}"
+      },
+      {
+        "name": "落地页D-无占位符",
+        "url": "https://d.example.com/plain"
+      }
+    ]
+  },
+  "tz2": {
+    "name": "备用分组（当前代码未使用）",
+    "items": [
+      { "name": "备用1", "url": "https://e.example.com/x/{suiji1}" }
+    ]
+  }
+}
