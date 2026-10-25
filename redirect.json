@@ -1,0 +1,35 @@
+{
+  "_comment": "跳转配置。顶层每个 key 是一个分组；items 内为候选地址，weight 为相对权重（缺省 1），enabled:false 可临时下线。",
+
+  "tz1": {
+    "name": "默认分组",
+    "items": [
+      {
+        "url": "https://example.com/landing/a?src=tz1&r={suiji1}&t={ts}",
+        "weight": 60
+      },
+      {
+        "url": "https://example.com/landing/b?src=tz1&r={suiji2}",
+        "weight": 30
+      },
+      {
+        "url": "https://example.com/landing/c?src=tz1&uid={uuid}",
+        "weight": 10
+      }
+    ]
+  },
+
+  "tz2": {
+    "name": "备用分组",
+    "items": [
+      {
+        "url": "https://example.org/welcome?r={suiji1}",
+        "weight": 100
+      },
+      {
+        "url": "https://example.org/maintenance",
+        "enabled": false
+      }
+    ]
+  }
+}
