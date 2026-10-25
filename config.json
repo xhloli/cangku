@@ -1,0 +1,30 @@
+{
+  "tz1": {
+    "name": "默认分流组",
+    "items": [
+      {
+        "url": "https://example.com/landing/alpha?source=tz&tag={suiji1}",
+        "weight": 5
+      },
+      {
+        "url": "https://example.com/landing/beta?source=tz&tag={suiji1}",
+        "weight": 3
+      },
+      {
+        "url": "https://example.com/landing/gamma?ts={ts}&r={suiji2}",
+        "weight": 1
+      }
+    ]
+  },
+  "tz2": {
+    "name": "活动页分流",
+    "items": [
+      { "url": "https://example.com/promo/a?code={rand6}", "weight": 1 },
+      { "url": "https://example.com/promo/b?code={rand6}", "weight": 1 }
+    ]
+  },
+  "tz3": {
+    "name": "备用组（空则触发兜底按钮）",
+    "items": []
+  }
+}
